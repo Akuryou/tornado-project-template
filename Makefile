@@ -18,7 +18,7 @@ requirements-production: requirements-base
 	$(PIP) install -r requirements/production.txt --upgrade
 
 server-development:
-	$(PYTHON) run.py --target=development
+	$(PYTHON) run.py --target=development --logging=debug
 
 server-production:
 	$(PYTHON) run.py --target=production
